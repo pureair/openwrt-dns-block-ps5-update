@@ -6,7 +6,7 @@ This script configures your OpenWrt router to block PS5 system updates. You can 
 
 This script also **blocks game updates**. Generally, all blocks do.
 
-If you need to update a game, you have to turn the block off first. Just run the script with the `off` command, update your game, and then run it with `on` again when you're done. That's why I made the script in the first place.
+If you need to update a game, you have to turn the block off first. **Make sure system update is turned off** (PS5 Settings > System > System Software > System Software Update and Settings), then run the script with the `off` command, update your game, and then run it with `on` again when you're done. That's why I made the script in the first place.
 
 ### How It Works
 
@@ -30,7 +30,7 @@ To turn the block off:
 ./toggle_ps5_updates.sh off
 ```
 
-## Web UI
+### Web UI
 
 When the block is on, you will be able to see it in openwrt web UI, Network - DHCP/DNS - (first tab) - Address.
  
